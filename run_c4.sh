@@ -5,7 +5,7 @@ dataset="/data1/takezawa/c4/realnewslike"
 
 alpha=1
 
-"""
+
 # Generates texts by the NS-Watermark.
 for gamma in {0.0001,} ; do
     mkdir -p results/c4
@@ -23,18 +23,12 @@ for gamma in {0.0001,} ; do
     mkdir -p results/c4/z_score
     python compute_z_score_llama.py --in_results results/c4/ns_watermark_${gamma}_${alpha}.csv.gz --out_results  results/c4/z_score/human_${gamma}.csv.gz --gamma ${gamma} --model ${model} --human
 done
-"""
+
 
 # compute PPL.
 for gamma in {0.0001,} ; do
     mkdir -p results/c4/z_score
     python compute_ppl.py --results results/c4/ns_watermark_${gamma}_${alpha}.csv.gz --gamma ${gamma} --model ${model}
-done
-
-# compute PPL.
-for gamma in {0.0001,} ; do
-    mkdir -p results/c4/z_score
-    python compute_ppl.py --results results/c4/soft_watermark_0.1_6.csv.gz --gamma ${gamma} --model ${model}
 done
 
 
