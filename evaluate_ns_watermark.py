@@ -40,8 +40,8 @@ def main(args):
     with torch.no_grad():
         for i, data in enumerate(tqdm(dataloader)):
 
-            if i > 10:
-                break
+            #if i > 10:
+            #    break
             
             input_ids = data["input_ids"].to(model.device)
             attention_mask = data["attention_mask"].to(model.device)
