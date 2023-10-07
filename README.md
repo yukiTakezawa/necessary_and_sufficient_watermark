@@ -1,7 +1,7 @@
 # Necessary and Sufficient Watermark for LLMs
 
 
-Necessary and Sufficient Watermark is a method for inserting watermarks into generated texts without degrading text quality.
+Necessary and Sufficient Watermark (NS-Watermark) is a method for inserting watermarks into generated texts without degrading text quality.
 
 ## Requirements
 See `setup.sh`.
@@ -24,7 +24,7 @@ An example is provided in `examples.ipynb`.
 You can reproduce our experiments as follows:
 
 ```
-bash run.sh # C4
+bash run_c4.sh # C4
 bash run_wmt.sh # WMT De->En
 ```
 
