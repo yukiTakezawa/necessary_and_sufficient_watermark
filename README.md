@@ -3,6 +3,8 @@
 
 Necessary and Sufficient Watermark (NS-Watermark) is a method for inserting watermarks into generated texts without degrading text quality.
 
+Paper: [https://arxiv.org/abs/2310.00833](https://arxiv.org/abs/2310.00833)
+
 ## Requirements
 See `setup.sh`.
 
